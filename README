@@ -1,0 +1,10 @@
+Project Drone Arm:
+
+Goal : simulating a drone arm with a reverse pendulum, thrust and gravity.
+
+session1.png : test without any thrust, the pendulum oscillates normally at -90° after being released at 0° horizontally. The theoritical duration of the oscillation is 20s, probably more than the reality if the pivot is not perfect.
+
+
+session2.png_Ki_10 : test with Ki=10, Kp = 4, Kd = 0.8 and a maximum thrust of 1N
+I added a anti windup conditionnal, and some delay from the motor as well as 
+a min and max value for the thrust. The anti windupis efficient when the sum of error is large enough and the utility is found on the angle output.
