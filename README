@@ -5,6 +5,8 @@ Goal : simulating a drone arm with a reverse pendulum, thrust and gravity.
 session1.png : test without any thrust, the pendulum oscillates normally at -90° after being released at 0° horizontally. The theoritical duration of the oscillation is 20s, probably more than the reality if the pivot is not perfect.
 
 
-session2.png_Ki_10 : test with Ki=10, Kp = 4, Kd = 0.8 and a maximum thrust of 1N
-I added a anti windup conditionnal, and some delay from the motor as well as 
+session2.png_Ki_10 : test with Ki=10, Kp = 4, Kd = 0.8 and a maximum thrust of 1N I added a anti windup conditionnal, and some delay from the motor as well as 
 a min and max value for the thrust. The anti windupis efficient when the sum of error is large enough and the utility is found on the angle output.
+
+session3 : I try to add a filter on the motor, to filter the gyro noise, but it makes the result less precise, so it's still an open question whether I should work more on this filter or not. 
+It's good gains, but I don't know if it will survive the true test, so I don't really care about the gain right now. 

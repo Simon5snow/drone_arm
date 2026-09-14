@@ -101,4 +101,4 @@ def compute_theta(angle_stab,Kp,Ki,tau_d=None, Kd=1.8, conditional=True):
     #ax1.set_ylabel("angle (deg)")
     #ax2.set_ylabel("poussée (N)")
     #ax2.set_xlabel("temps (s)")
-    plt.plot(times, theta_value, label=f"{round(math.degrees(angle_stab))}° — tau_d = {tau_d}")
+    plt.plot(times, theta_value, label=f"{round(math.degrees(angle_stab))}°")
