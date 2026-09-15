@@ -65,10 +65,10 @@ def compute_theta(angle_stab,Kp,Ki,tau_d=None, Kd=1.8, conditional=True):
 
         erreur = angle_stab-theta_vu
         T_cmd = Kp*erreur - Kd*omega_vu + Ki*somme_erreur + m*g*math.cos(theta_vu)        
-        T_reel = T_reel + (T_cmd -T_reel)*dt/tau    #ajoute un retard
+        T_reel = T_reel + (T_cmd -T_reel)*dt/tau    #add a delay
 
 
-        if T_reel>T_max:    #Borne la poussée
+        if T_reel>T_max:    #cap the thrust
             T_reel=T_max
         elif T_reel<T_min:
             T_reel= T_min
