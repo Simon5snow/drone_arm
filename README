@@ -10,3 +10,10 @@ a min and max value for the thrust. The anti windupis efficient when the sum of 
 
 session3 : I try to add a filter on the motor, to filter the gyro noise, but it makes the result less precise, so it's still an open question whether I should work more on this filter or not. 
 It's good gains, but I don't know if it will survive the true test, so I don't really care about the gain right now. 
+
+First true test in the lab. 
+Lowest value to make the motor turn: 1016
+Then I burned the ESC because I sent 1500 to the motor. Next time i will solder a capacitor in paralell to the ESC and I modified the 
+
+7/10/2026:
+Second session in the lab: I burned my last esc and my ESP32 because I inverted the GND and pin 18 when I plugged the ESC.
